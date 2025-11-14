@@ -1,0 +1,29 @@
+# Em caso de sucesso, test de uma rua
+POST http://localhost:8000/temperatura HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+    "cep":"15771034"
+}
+###
+# -----------------------------------------------------------------------------------------------
+
+# Em caso de falha para retornar cep invalido
+POST http://localhost:8000/temperatura HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+    "cep":"15787"
+}
+###
+# -----------------------------------------------------------------------------------------------
+# Em caso de cep valido, porém não encontrado da base
+POST http://localhost:8000/temperatura HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+    "cep":"15771411"
+}
