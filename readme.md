@@ -32,4 +32,4 @@ Recebe um JSON contendo o CEP:
 ### Dentro da Pasta API contém teste http para api local e web
 
 ---
-### Caminho Para teste WEB -> [text](https://labs-goexpert-870996530558.us-central1.run.app/temperatura)
+### Caminho Para Aplicação Web google cloud  -> https://labs-goexpert-870996530558.us-central1.run.app/temperatura
