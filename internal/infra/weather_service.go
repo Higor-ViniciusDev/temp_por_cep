@@ -19,7 +19,7 @@ func NovoWeatherService() *WeatherService {
 func (s *WeatherService) BuscarTemperaturaPorEndereco(cidade string, estadoSigla string) (*entity.Temperatura, error) {
 	cidadeFormatada := url.QueryEscape(cidade)
 
-	resp, err := http.Get(fmt.Sprintf("https://api.weatherapi.com/v1/current.json?key=cd5f13c67b234405ab1151712251311&q=%v,%v,brazil&aqi=no", cidadeFormatada, estadoSigla))
+	resp, err := http.Get(fmt.Sprintf("http://api.weatherapi.com/v1/current.json?key=cd5f13c67b234405ab1151712251311&q=%v,%v,brazil&aqi=no", cidadeFormatada, estadoSigla))
 
 	if err != nil {
 		return nil, err
